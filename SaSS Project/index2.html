@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>SaaS 2</title>
+</head>
+
+<body>
+    <main class="is-flex-row">
+        <aside class="sidebar is-flex-column">
+            <!-- toggled sidebar -->
+            <div class="sidebar-header is-flex-column">
+                <p>Saas Kit</p>
+            </div>
+
+            <!-- top divider -->
+            <div class="sidebar-body is-flex-column">
+
+                <div class="user-profile is-flex-row">
+                    <div class="user-profile-img">
+                        <img src="./svgs/sierra-ferguson.svg" alt="user profile image">
+                    </div>
+                    <div class="user-profile-info is-flex-column">
+                        <p class="user-profile-name">Sierran Ferguson</p>
+                        <p class="user-profile-email">s.ferguson@gmail.com</p>
+                    </div>
+                </div>
+
+                <ul class="links is-flex-column">
+                    <li class="is-flex-row has-svg">
+                        <img class="icons" src="./svgs/dashboard.svg" alt="dashboard icon">
+                        <div>Dashboard</div>
+                    </li>
+                    <li class="is-flex-row has-svg">
+                        <img class="icons" src="./svgs/tasks.svg" alt="tasks icon">
+                        <div>Tasks</div>
+                    </li>
+                    <li class="is-flex-row has-svg">
+                        <img class="icons" src="./svgs/email.svg" alt="email icon">
+                        <div>Email</div>
+                    </li>
+                    <li class="is-flex-row has-svg">
+                        <img class="icons" src="./svgs/contacts.svg" alt="contacts icon">
+                        <div>Contacts</div>
+                    </li>
+                    <li class="is-flex-row has-svg">
+                        <img class="icons" src="./svgs/chat.svg" alt="chat icon">
+                        <div>Chat</div>
+                    </li>
+                    <li class="is-flex-row has-svg">
+                        <img class="icons" src="./svgs/deals.svg" alt="deals icon">
+                        <div>Deals</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-footer is-flex-column">
+                <ul id="settings" class="is-flex-column">
+                    <li class="is-flex-row has-svg">
+                        <img class="icons" src="./svgs/settings.svg" alt="dashboard icon">
+                        <div>Settings</div>
+                    </li>
+                </ul>
+
+                <ul class="toggle-sidebar is-flex-column">
+                    <li class="is-flex-row has-svg">
+                        <img class="icons" src="./svgs/toggle-sidebar.svg" alt="dashboard icon">
+                        <div>Toggle sidebar</div>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <div class="main-content">
+            <div class="searchbar">
+                <img class="search-icon" src="./svgs/search.svg" alt="search icon">
+                <input type="text" placeholder="Global search">
+                <div class="bell-image-container has-svg">
+                    <img src="./svgs/bell.svg" alt="bell icon">
+                </div>
+            </div>
+
+            <div class="tasks-and-graphics">
+                <div class="tasks">
+
+                    <div class="progress">
+                        <div class="progress-bar-text">
+                            <p>8 tasks completed out of 10</p>
+                            <p class="dropdown-label">Show:
+                                <button class="dropdown-btn"><span class="has-svg">This week
+                                        <img class="has-svg" id="down-arrow" src="./svgs/down-arrow.svg"
+                                            alt="down arrow">
+                                    </span></button>
+                            </p>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="blank-bar"></div>
+                            <div class="green-bar"></div>
+                        </div>
+
+                        <div class="current-date">
+                            <p>23 December, Sunday</p>
+                        </div>
+
+                        <ul class="calendar">
+                            <li class="date">
+                                <p>Sun</p>
+                                <p id="circle-date">23</p>
+                            </li>
+                            <li class="date">
+                                <p>Mon</p>
+                                <p>24</p>
+                            </li>
+                            <li class="date">
+                                <p>Tue</p>
+                                <p>25</p>
+                            </li>
+                            <li class="date">
+                                <p>Wed</p>
+                                <p>26</p>
+                            </li>
+                            <li class="date">
+                                <p>Thu</p>
+                                <p>27</p>
+                            </li>
+                            <li class="date">
+                                <p>Fri</p>
+                                <p>28</p>
+                            </li>
+                            <li class="date">
+                                <p>Sat</p>
+                                <p>29</p>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="alerts">
+
+                        <div class="notification">
+                            <div class="label">
+                                <p class="label-text">Send benefit review by Sunday</p>
+                                <p class="type">Reminder</p>
+                            </div>
+                            <div class="due-date">
+                                <span class="due-date-text">Due date: </span>
+                                <span class="due-date-date">23 December, 2018</span>
+                            </div>
+                            <div class="status">
+                                <div class="status-profile-image">
+                                    <img class="profile-image" src="./svgs/george-fields.svg" alt="profile photo">
+                                </div>
+                                <div class="status-buttons">
+                                    <img class="pencil" src="./svgs/pencil.svg" alt="pencil">
+                                    <img class="trashcan" src="./svgs/trashcan.svg" alt="trashcan">
+                                    <button class="completed">Completed</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="notification">
+                            <div class="label">
+                                <p class="label-text">Invite to office meet-up</p>
+                                <p class="type">Call</p>
+                            </div>
+                            <div class="due-date">
+                                <span class="due-date-text">Due date: </span>
+                                <span class="due-date-date">23 December, 2018</span>
+                            </div>
+                            <div class="status">
+                                <div class="status-profile-image">
+                                    <img class="profile-image" src="./svgs/rebecca-moore.svg" alt="profile photo">
+                                </div>
+                                <div class="status-buttons">
+                                    <img class="pencil" src="./svgs/pencil.svg" alt="pencil">
+                                    <img class="trashcan" src="./svgs/trashcan.svg" alt="trashcan">
+                                    <button class="ended">Ended</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notification">
+                            <div class="label">
+                                <p class="label-text">Office meet-up</p>
+                                <p class="type">Event</p>
+                            </div>
+
+                            <div class="due-date">
+                                <span class="due-date-text">Due date: </span>
+                                <span class="due-date-date">23 December, 2018</span>
+                            </div>
+
+                            <div class="status">
+                                <div class="status-profile-image">
+                                    <img class="profile-image" src="./svgs/lindsey-stroud.svg" alt="profile photo">
+                                </div>
+                                <div class="status-buttons">
+                                    <img class="pencil" src="./svgs/pencil.svg" alt="pencil">
+                                    <img class="trashcan" src="./svgs/trashcan.svg" alt="trashcan">
+                                    <button class="completed">Completed</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="show-more">
+                            <button class="show-more expand">Show More</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="graphics">
+
+                    <div class="chart1">
+                        <div class="chart-label">
+                            <p class="chart-title">Deals</p>
+
+                            <p class="dropdown-label">Show:
+                                <button class="dropdown-btn"><span class="has-svg">Monthly
+                                        <img class="has-svg" id="down-arrow" src="./svgs/down-arrow.svg"
+                                            alt="down arrow">
+                                    </span></button>
+                        </div>
+                        <div class="chart deals-chart">
+                            <ul class="deals-key">
+                                <li class="closed-deals">Closed deals</li>
+                            </ul>
+                            <img class="deals-chart-img" src="./svgs/deals-chart.svg" alt="deals chart">
+                        </div>
+                    </div>
+
+                    <div class="spacer"></div>
+
+                    <div class="chart2">
+                        <div class="chart-label">
+                            <p class="chart-title">Tasks</p>
+                            <p class="dropdown-label">Show:
+                                <button class="dropdown-btn"><span class="has-svg">This month
+                                        <img class="has-svg" id="down-arrow" src="./svgs/down-arrow.svg"
+                                            alt="down arrow">
+                                    </span></button>
+                        </div>
+                        <div class="chart tasks-chart">
+                            <img class="tasks-chart-img" src="./svgs/tasks-chart.svg" alt="deals chart">
+                            <ul class="tasks-key">
+                                <li class="first-item">Active</li>
+                                <li class="second-item">Completed</li>
+                                <li class="third-item">Ended</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

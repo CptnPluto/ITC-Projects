@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/form-styles.css" rel="stylesheet" />
+    <title>Contact</title>
+</head>
+
+<body>
+    <nav class="topnav">
+        <a href="../index.html" target="_self">Home</a>
+        <a href="about.html" target="_self">About</a>
+        <a href="contact.html" target="_self">Contact</a>
+    </nav>
+
+<section>
+
+    <h2 id="contact-us">Contact Me!</h2>
+
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xzbwdwjp" method="post">
+        <fieldset id="fs-frm-inputs">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" class="required" placeholder="First name here" required="">
+
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Last name here">
+
+            <label for="email-address">Email Address</label>
+            <input type="email" name="_replyto" id="email-address" class="required" placeholder="email@domain.tld" required="">
+
+            <label for="message">Message</label>
+            <textarea rows="5" name="message" id="message" class="required" placeholder="Enter your message here." required=""></textarea>
+
+            <label for="beards">Select Your Favorite Beard Style</label>
+            <select name="beards" id="beards" class="required" required="">
+                <option value="" selected="" disabled="">Select</option>
+                <option value="Bushy">Bushy</option>
+                <option value="Scruffy">Scruffy</option>
+                <option value="Sharply groomed">Sharply groomed</option>
+                <option value="Whimsical">Whimsical</option>
+                <option value="I'm Lame">I don't like beards</option>
+            </select>
+            
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+
+        <input id="submit-button" type="submit" value="Submit" disabled>
+    </form>
+
+</section>
+
+    <footer class="footer">
+        <div class = "bottom-links">
+            <a href="../index.html" target="_self">Home</a>
+            <a href="about.html" target="_self">About</a>
+            <a href="contact.html" target="_self">Contact</a>
+        </div>
+        <div class = "bottom-sentence">
+            <span id="language-array-sentence"></span>
+        </div>
+    </footer>
+    
+    <script src="../js/contact.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+
+</html>

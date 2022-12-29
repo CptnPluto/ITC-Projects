@@ -1,0 +1,197 @@
+/* CREATE TWEET */
+
+.tweet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ffffff;
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+    position: relative;
+}
+
+.tweet-container textarea {
+    width: 50vw;
+    height: 30vh;
+    resize: none;
+    border: none;
+    font-size: 1.5rem;
+    /* outline: none; */
+    /* padding: 1rem; */
+    color: #ffffff;
+    /* background-color: #f5f8fa; */
+    /* border: 1px dashed #ff7c7c; */
+}
+
+.tweet-container textarea:focus {
+    outline: none;
+}
+
+button#tweet,
+button#reset {
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin-top: 5px;
+}
+
+button#tweet[disabled] {
+    background-color: #838383;
+}
+
+button#tweet:hover {
+    background-color: #165ef9;
+}
+
+.error p {
+    background-color: #f5c6cb;
+    padding: 3px 6px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 1rem;
+    left: 0.5rem;
+}
+
+/* END CREATE TWEET */
+
+/* TWEET */
+.tweet-feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.tweet {
+    display: flex;
+    flex-direction: column;
+    width: 52vw;
+    padding: 1rem 0.5rem;
+    margin: 0.5rem;
+    color: #ffffff;
+    overflow: scroll;
+    background-color: #343a40;
+    border-radius: 5px;
+}
+
+.tweet * {
+    background-color: #343a40;
+}
+
+.tweet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.delete {
+    align-self: flex-end;
+    align-content: center;
+    display: flex;
+    cursor: pointer;
+    background-color: rgb(80, 181, 248);
+    border-radius: 50%;
+    width: 20px;
+    padding-left: 4px;
+}
+.username {
+    color: #6c757d;
+    background-color: #343a40;
+}
+
+.tweet .profileImg {
+    /* vertical-align: middle; */
+    border-radius: 30%;
+    border-width: 2px;
+    border-color: grey;
+    border-style: solid;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 3%;
+}
+
+.text {
+    background-color: #343a40;
+}
+/* END TWEET */
+
+/* NAVBAR */
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 5fr;
+    grid-column-gap: 2px;
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+.first {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.second {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#profile {
+    padding-left: 5px;
+}
+
+.third {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.icon {
+    align-self: center;
+    padding-right: 1rem;
+}
+/* .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    width: 80%;
+    height: 2rem;
+    margin-bottom: 5px;
+}  */
+/* align these columns at the end of the grid */
+#login,
+#logout {
+    align-self: end;
+    justify-self: end;
+}
+
+nav * {
+    background-color: #333;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav li {
+    cursor: pointer;
+}
+
+li:active {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.active {
+    color: rgb(242, 13, 13);
+    font-weight: bold;
+}
+
+.inactive {
+    color: rgb(161, 161, 161);
+    font-weight: lighter;
+}
+/* END NAVBAR */
